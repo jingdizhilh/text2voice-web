@@ -1,6 +1,6 @@
 const apiConfig = {
     "voice-api": {
-        url: "https://ttsapi.zwei.de.eu.org/tts",
+        url: "https://tts-api.fcs3l66g5004.workers.dev/tts",
         speakers: {
             "zh-CN-XiaoxiaoNeural": "晓晓",
             "zh-CN-YunxiNeural": "云希",
@@ -118,7 +118,7 @@ function generateVoice(isPreview) {
         url: url,
         method: 'GET',
         headers: {
-            'x-api-key': '@ak47'  // 添加 API 密钥
+            'x-api-key': 'key1234'  // 添加 API 密钥
         },
         xhrFields: {
             responseType: 'blob' // 确保返回的是一个Blob对象
